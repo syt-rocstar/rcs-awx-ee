@@ -33,7 +33,7 @@ jobs:
         run: pip3 install ansible-builder setuptools
 
       - name: Login to image repository
-        if: github.ref_type == 'tag'
+        #if: github.ref_type == 'tag'
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
@@ -49,6 +49,6 @@ jobs:
           -f execution-environment.yml
 
       - name: Push EE image
-        if: github.ref_type == 'tag'
+        #if: github.ref_type == 'tag'
         run: |
           docker push ghcr.io/syt-rocstar/rcs-awx-ee -a
