@@ -53,3 +53,7 @@ collections:
     - name: dellemc.unity
     - name: f5networks.f5_modules
     - name: kubernetes.core
+    - name: netbox.netbox
+    - name: grafana.grafana
+    - name: prometheus.prometheus
+    - name: ansible.eda
